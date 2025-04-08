@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karthik K | Portfolio</title>
+    <style>
+        :root {
+            --primary: #3498db;
+            --secondary: #2ecc71;
+            --accent: #e74c3c;
+            --light: #ecf0f1;
+            --dark: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: white;
+            min-height: 100vh;
+            animation: gradientShift 15s ease infinite;
+            background-size: 200% 200%;
+        }
+        
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 40px 0;
+            position: relative;
+        }
+        
+        h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            background: linear-gradient(to right, #f1c40f, var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        h2 {
+            font-size: 2rem;
+            color: var(--light);
+            border-bottom: 2px solid var(--light);
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+        
+        .section {
+            background-color: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease;
+        }
+        
+        .section:hover {
+            transform: translateY(-5px);
+        }
+        
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+        
+        .profile-pic {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--light);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        
+        .skill {
+            background-color: var(--accent);
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: bold;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .skill:hover {
+            transform: scale(1.1);
+            background-color: #f1c40f;
+            color: var(--dark);
+        }
+        
+        .project {
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.15);
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .project:hover {
+            background-color: rgba(255,255,255,0.25);
+            transform: translateX(10px);
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .contact-item a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-item a:hover {
+            color: #f1c40f;
+            text-decoration: underline;
+        }
+        
+        .icon {
+            font-size: 1.5rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background-color: rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+        
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Karthik K</h1>
+            <p>Program Management & Developer</p>
+        </header>
+        
+        <section id="about" class="section">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="C:\Users\Ayshwarya AM\OneDrive\ALL FILES\WhatsApp Image 2025-03-24 at 9.51.24 PM - Copy.jpeg" alt="Karthik K" class="profile-pic">
+                <div>
+                    <p>Working as Program Management at Rikun Manufacturing Private Limited for the past 8 months, I have gained valuable experience in overseeing projects, coordinating cross-functional teams, and ensuring timely delivery of objectives.</p>
+                    <p>Alongside my management skills, I possess a solid foundation in programming, with proficiency in Java, HTML, CSS, JavaScript, and MySQL. This combination allows me to understand technical requirements deeply and collaborate closely with development teams to drive innovation and problem-solving.</p>
+                    <p>I am passionate about leveraging my technical skills and management experience to contribute to impactful projects and deliver exceptional results. I am always eager to learn, adapt, and grow within dynamic environments.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>Experimental investigation of vapour compression heat pump using eco friendly as an alternative to hfc-134a</h3>
+            </div>
+        </section>
+        
+        <section id="skills" class="section">
+            <h2>Skills</h2>
+            <div class="skills-container">
+                <div class="skill">Java</div>
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">MySQL</div>
+                <div class="skill">Program Management</div>
+                <div class="skill">Microsoft Excel</div>
+                <div class="skill">Microsoft word</div>
+            </div>
+        </section>
+        
+        <section id="contact" class="section">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope icon"></i>
+                    <a href="mailto:karthikdevakumar7@gmail.com">karthikdevakumar7@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone icon"></i>
+                    <a href="tel:9080986267">9080986267</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>&copy; 2023 Karthik K. All rights reserved.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Add interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skills on hover
+            const skills = document.querySelectorAll('.skill');
+            skills.forEach(skill => {
+                skill.addEventListener('mouseover', function() {
+                    this.style.transform = 'scale(1.1)';
+                });
+                skill.addEventListener('mouseout', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+            
+            // Add scroll animation
+            const sections = document.querySelectorAll('.section');
+            function checkScroll() {
+                sections.forEach(section => {
+                    const sectionTop = section.getBoundingClientRect().top;
+                    if (sectionTop < window.innerHeight - 100) {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0)';
+                    }
+                });
+            }
+            
+            // Initial state
+            sections.forEach(section => {
+                section.style.opacity = '0';
+                section.style.transform = 'translateY(20px)';
+                section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            });
+            
+            window.addEventListener('scroll', checkScroll);
+            checkScroll(); // Run once on load
+        });
+    </script>
+</body>
+</html>
